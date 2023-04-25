@@ -32,12 +32,12 @@ Using execution environment in [Jobs](https://docs.ansible.com/automation-contro
 Mount the SOPS keys to decrypt using [Execution environment mount options](https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#execution-environment-mount-options)
 
 ```bash
-sudo mkdir /var/lib/awx/.keys
-sudo mv keys.txt /var/lib/awx/.keys
-sudo mv opn.key /var/lib/awx/.keys
+sudo mkdir -p /var/lib/awx/{.sops-key,.opn-key}
+sudo mv keys.txt /var/lib/awx/.sops-key
+sudo mv opn.key /var/lib/awx/.opn-key
 ```
 
-## Troubleshooting tips
+## Troubleshooting
 
 To exec into a Job container
 
