@@ -2,3 +2,5 @@ collections:
   - kubernetes.core
   - community.sops
   - ansibleguy.opnsense
+  - community.crypto
+  - ansible.posix
