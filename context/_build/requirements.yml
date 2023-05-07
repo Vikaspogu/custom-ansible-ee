@@ -4,3 +4,4 @@ collections:
   - ansibleguy.opnsense
   - community.crypto
   - ansible.posix
+  - community.general
