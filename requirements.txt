@@ -1,3 +1,5 @@
 httpx
 proxmoxer
 requests
+botocore
+boto3

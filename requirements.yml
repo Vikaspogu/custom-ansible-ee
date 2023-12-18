@@ -5,3 +5,4 @@ collections:
   - community.crypto
   - ansible.posix
   - community.general
+  - amazon.aws
