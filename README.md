@@ -1,4 +1,4 @@
-# Homelab Ansible Execution Image Builder
+# Custom Ansible Execution Environment
 
 This repository is to build a custom execution image for managing SOPS secrets, OPNSense router in Ansible Automation platform.
 
@@ -9,15 +9,16 @@ Install [ansible-builder](https://docs.ansible.com/automation-controller/latest/
 (Optional) To bootstrap a new Ansible builder structure
 
 ```bash
-mkdir homelab-ansible-execution-builder
+mkdir custom-ansible-ee
 ansible-builder create
 ```
 
 Create the image using the podman command
 
 ```bash
-git clone https://github.com/Vikaspogu/homelab-ansible-execution-builder.git
-cd homelab-ansible-execution-builder
+git clone https://github.com/Vikaspogu/custom-ansible-ee.git
+cd custom-ansible-ee
+ansible-builder create
 podman build -f context/Containerfile -t quay.io/<USER>/<IMAGE_NAME>:<IMAGE_TAG> context
 ```
 

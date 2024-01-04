@@ -1,5 +1,6 @@
 httpx
 proxmoxer
 requests
-botocore
-boto3
+botocore>=1.19.0
+boto3>=1.16.0
+boto>=2.49.0
