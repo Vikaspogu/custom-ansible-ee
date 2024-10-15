@@ -1,6 +1,6 @@
 schemaVersion: 2.2.0
 metadata:
-  name: ansible-builder
+  name: custom-ansible-ee
 components:
   - name: ansible-builder
     container:
