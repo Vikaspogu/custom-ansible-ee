@@ -1,0 +1,7 @@
+schemaVersion: 2.2.0
+metadata:
+  name: ansible-builder
+components:
+  - name: ansible-builder
+    container:
+      image: registry.redhat.io/ansible-automation-platform-24/ansible-builder-rhel9@sha256:122d7bc8542b6114c00e1a3ffaaf6cd348b0bb5e67b989fd6e552e1187b99e81
