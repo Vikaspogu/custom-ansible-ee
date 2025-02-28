@@ -11,6 +11,7 @@ Install [ansible-builder](https://docs.ansible.com/automation-controller/latest/
 ```bash
 mkdir custom-ansible-ee
 ansible-builder create
+ansible-builder build -v3 -t quay.io/<USER>/<IMAGE_NAME>:<IMAGE_TAG>
 ```
 
 Create the image using the podman command
@@ -19,7 +20,7 @@ Create the image using the podman command
 git clone https://github.com/Vikaspogu/custom-ansible-ee.git
 cd custom-ansible-ee
 ansible-builder create
-podman build -f context/Containerfile -t quay.io/<USER>/<IMAGE_NAME>:<IMAGE_TAG> context
+podman build -f context/Containerfile -t quay.io/<USER>/<IMAGE_NAME>:<IMAGE_TAG> --variant=x86_64
 ```
 
 Pushing image to a registry
