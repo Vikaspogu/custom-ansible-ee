@@ -26,7 +26,6 @@ dependencies:
     collections:
       - name: kubernetes.core
       - name: community.sops
-      - name: ansibleguy.opnsense
       - name: ansible.posix
       - name: community.general
       - name: community.crypto
@@ -34,6 +33,11 @@ dependencies:
       - name: ansible.controller
       - name: infra.controller_configuration
       - name: infra.aap_utilities
+      - name: community.vmware
+    roles:
+      - name: vcenter_permissions
+        src: https://github.com/Vikaspogu/ansible-roles.git
+        version: main
   ansible_core:
     package_pip: ansible-core
   ansible_runner:
@@ -46,3 +50,14 @@ dependencies:
     - botocore>=1.19.0
     - boto3>=1.16.0
     - boto>=2.49.0
+    - bcrypt
+    - jmespath
+    - netaddr
+    - openshift
+    - passlib
+    - pyvmomi
+    - urllib3
+    - PyYAML
+    - requests-oauthlib
+    - vmware-vcenter
+    - vmware-vapi-common-client
